@@ -14,3 +14,9 @@ Expected output:
 }]
 ```
 
+> [!IMPORTANT]
+
+ On **master** branch is situated version of code where only one datasource is connected.
+
+And on **several-ds** branch - option with several DS connected.
+However, it has a small nuance, it's not working properly.
