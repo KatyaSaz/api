@@ -20,8 +20,8 @@ public class UserController {
     private final UserService userService;
 
     @Autowired
-    public UserController(UserService userServiceImpl){
-        this.userService = userServiceImpl;
+    public UserController(UserService userService){
+        this.userService = userService;
     }
 
     @Operation(summary = "Get all users")
