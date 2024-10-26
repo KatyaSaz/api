@@ -2,19 +2,15 @@ package com.epam.api.repository;
 
 import com.epam.api.config.DataSourceConfig;
 import com.epam.api.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.util.List;
 
-@Repository
 public class UserRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    @Autowired
     public UserRepository(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }

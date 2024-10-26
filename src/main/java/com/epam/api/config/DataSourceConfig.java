@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @Configuration
-@ConfigurationProperties(prefix = "data-sources")
+@ConfigurationProperties(prefix = "app")
 public class DataSourceConfig {
 
     private List<DataSourceProperties> dataSources;
