@@ -1,22 +1,41 @@
 # Api for user information
 
 ### Get all users
-* Url: http://localhost:8080/api/users
+* Url: http://localhost:8080/users
 * Swagger: http://localhost:8080/swagger-ui/index.html#
 
 Expected output:
 ``` 
-[{
-"id": 0,
-"username": "string",
-"name": "string",
-"surname": "string"
-}]
+[
+  {
+    "id": "1",
+    "username": "user21",
+    "name": "USER",
+    "surname": "USEROV"
+  },
+  {
+    "id": "2",
+    "username": "user22",
+    "name": "TESTUSER",
+    "surname": "TESTOV"
+  },
+  {
+    "id": "user1",
+    "username": "user1",
+    "name": "User",
+    "surname": "Userenko"
+  },
+  {
+    "id": "user2",
+    "username": "user2",
+    "name": "Testuser",
+    "surname": "Testov"
+  }
+]
 ```
 
 > [!IMPORTANT]
 
- On **master** branch is situated version of code where only one datasource is connected.
+ On **several-ds** branch the latest version of code is situated.
 
-And on **several-ds** branch - option with several DS connected.
-However, it has a small nuance, it's not working properly.
+ **master** branch has option where just one datasource is presented.
